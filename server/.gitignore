@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Environment variables
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.idea/
+.vscode/
+
+# Dependency directories
+.pnp/
+.pnp.js
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Production
+/public/bundle.js
