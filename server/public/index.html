@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Information</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #a8c0ff, #3f87a6);
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+            width: 90%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1f2937;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 10px 0;
+            color: #4b5563;
+        }
+        strong {
+            color: #111827;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            color: #ffffff;
+            background: linear-gradient(45deg, #4f46e5, #6d28d9);
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .button:hover {
+            background: linear-gradient(45deg, #6d28d9, #4f46e5);
+            transform: scale(1.05);
+        }
+        .card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .card-content {
+            font-size: 1rem;
+            color: #666;
+        }
+        .api-links {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .api-links h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #1f2937;
+        }
+        .api-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .api-links li {
+            margin-bottom: 10px;
+        }
+        .api-links a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .api-links a:hover {
+            text-decoration: underline;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            .card-title {
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.75rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .button {
+                padding: 8px 16px;
+                font-size: 0.8rem;
+            }
+            .card-title {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Server Information</h1>
+        <div class="card">
+            <div class="card-title">API Server</div>
+            <div class="card-content">
+                <p><strong>Server Title:</strong> My Blog API Server</p>
+                <p><strong>Description:</strong> This server provides a RESTful API to manage blog posts. You can retrieve, add, and view blog posts. The API supports various operations like CRUD and has endpoints for listing and fetching individual blog posts.</p>
+            </div>
+        </div>
+        <h2>API Endpoints</h2>
+        <a href="https://github.com/your-repo" class="button" target="_blank">Github </a>
+        <a href="/blogs" class="button" target="_blank">Get All Blogs</a>
+
+        
+    </div>
+</body>
+</html>
