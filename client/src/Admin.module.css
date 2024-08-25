@@ -165,7 +165,7 @@
   }
   
   .editButton:hover {
-    background: #8a9eff;
+    background: #2347fc;
   }
   
   .deleteButton {
@@ -174,7 +174,7 @@
   }
   
   .deleteButton:hover {
-    background: #e57373;
+    background: #eb1212;
   }
   
   /* Responsive Styles */
