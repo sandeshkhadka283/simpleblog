@@ -1,8 +1,8 @@
 /* client/src/Admin.module.css */
 
 .container {
-    max-width: 800px; /* Constrain the width */
-    margin: 20px auto; /* Center horizontally */
+    max-width: 1200px;
+    margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 12px;
@@ -15,6 +15,19 @@
     color: #333;
     margin-bottom: 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .formContainer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .form {
@@ -72,23 +85,102 @@
     transform: scale(1.05);
   }
   
+  .blogList {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blogList h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .blogListContainer {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .blogItem {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .blogNumber {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .blogContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blogTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .blogDescription {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0 10px;
+  }
+  
+  .blogDate {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 10px;
+  }
+  
+  .blogActions {
+    margin-top: 10px;
+  }
+  
+  .editButton,
+  .deleteButton {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .editButton {
+    background: #a6c0fe;
+    color: #fff;
+  }
+  
+  .editButton:hover {
+    background: #8a9eff;
+  }
+  
+  .deleteButton {
+    background: #f28e8e;
+    color: #fff;
+  }
+  
+  .deleteButton:hover {
+    background: #e57373;
+  }
+  
   /* Responsive Styles */
   @media (max-width: 768px) {
-    .container {
-      padding: 15px;
-    }
-  
-    .title {
-      font-size: 1.5rem;
-    }
-  
-    .input,
-    .textarea {
-      font-size: 0.9rem;
-    }
-  
-    .submitButton {
-      font-size: 0.9rem;
+    .gridContainer {
+      grid-template-columns: 1fr; /* Stack columns vertically on small screens */
     }
   }
   
