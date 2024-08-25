@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import styles from './Home.module.css';
 
 const Home = () => {
   const [blogs, setBlogs] = useState([]);
@@ -13,14 +14,14 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Blog List</h1>
-      <ul>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Blog List</h1>
+      <ul className={styles.blogList}>
         {blogs.map(blog => (
-          <li key={blog._id}>
-            <Link to={`/blogs/${blog._id}`}>
-              <h2>{blog.title}</h2>
-              <img src={blog.image} alt={blog.title} width="100" />
+          <li key={blog._id} className={styles.blogItem}>
+            <Link to={`/blogs/${blog._id}`} className={styles.blogLink}>
+              <h2 className={styles.blogTitle}>{blog.title}</h2>
+              <p className={styles.blogDescription}>{blog.description}</p>
             </Link>
           </li>
         ))}

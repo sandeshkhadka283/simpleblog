@@ -1,0 +1,63 @@
+/* client/src/Home.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blogList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .blogItem {
+    background: linear-gradient(135deg,  #97999c,#f8e4f2);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blogItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .blogLink {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .blogTitle {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .blogDescription {
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: #f0f0f0;
+    margin-top: 10px;
+  }
+  

@@ -1,6 +1,7 @@
 // client/src/Admin.js
 import React, { useState } from 'react';
 import axios from 'axios';
+import styles from './Admin.module.css';
 
 const Admin = () => {
   const [title, setTitle] = useState('');
@@ -27,26 +28,49 @@ const Admin = () => {
   };
 
   return (
-    <div>
-      <h1>Add New Blog</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Title:</label>
-          <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required />
+    <div className={styles.container}>
+      <h1 className={styles.title}>Add New Blog</h1>
+      <form onSubmit={handleSubmit} className={styles.form}>
+        <div className={styles.formGroup}>
+          <label className={styles.label}>Title:</label>
+          <input
+            type="text"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            required
+            className={styles.input}
+          />
         </div>
-        <div>
-          <label>Image URL:</label>
-          <input type="text" value={image} onChange={(e) => setImage(e.target.value)} required />
+        <div className={styles.formGroup}>
+          <label className={styles.label}>Image URL:</label>
+          <input
+            type="text"
+            value={image}
+            onChange={(e) => setImage(e.target.value)}
+            required
+            className={styles.input}
+          />
         </div>
-        <div>
-          <label>Description:</label>
-          <textarea value={description} onChange={(e) => setDescription(e.target.value)} required />
+        <div className={styles.formGroup}>
+          <label className={styles.label}>Description:</label>
+          <textarea
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            required
+            className={styles.textarea}
+          />
         </div>
-        <div>
-          <label>Keywords (comma separated):</label>
-          <input type="text" value={keywords} onChange={(e) => setKeywords(e.target.value)} required />
+        <div className={styles.formGroup}>
+          <label className={styles.label}>Keywords (comma separated):</label>
+          <input
+            type="text"
+            value={keywords}
+            onChange={(e) => setKeywords(e.target.value)}
+            required
+            className={styles.input}
+          />
         </div>
-        <button type="submit">Add Blog</button>
+        <button type="submit" className={styles.submitButton}>Add Blog</button>
       </form>
     </div>
   );

@@ -1,0 +1,94 @@
+/* client/src/Admin.module.css */
+
+.container {
+    max-width: 800px; /* Constrain the width */
+    margin: 20px auto; /* Center horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .input,
+  .textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .input:focus,
+  .textarea:focus {
+    border-color: #a6c0fe;
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #fbc2eb, #a6c0fe);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submitButton:hover {
+    background: linear-gradient(135deg, #a6c0fe, #fbc2eb);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .input,
+    .textarea {
+      font-size: 0.9rem;
+    }
+  
+    .submitButton {
+      font-size: 0.9rem;
+    }
+  }
+  

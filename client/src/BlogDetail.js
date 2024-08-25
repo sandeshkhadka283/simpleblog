@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import styles from './BlogDetail.module.css';
 
 const BlogDetail = () => {
   const { id } = useParams();
@@ -14,14 +15,16 @@ const BlogDetail = () => {
   }, [id]);
 
   return blog ? (
-    <div>
-      <h1>{blog.title}</h1>
-      <img src={blog.image} alt={blog.title} />
-      <p>{blog.description}</p>
-      <p><strong>Keywords:</strong> {blog.keywords.join(', ')}</p>
+    <div className={styles.container}>
+      <h1 className={styles.title}>{blog.title}</h1>
+      <div className={styles.imageContainer}>
+        <img src={blog.image} alt={blog.title} className={styles.image} />
+      </div>
+      <p className={styles.description}>{blog.description}</p>
+      <p className={styles.keywords}><strong>Keywords:</strong> {blog.keywords.join(', ')}</p>
     </div>
   ) : (
-    <p>Loading...</p>
+    <p className={styles.loading}>Loading...</p>
   );
 };
 

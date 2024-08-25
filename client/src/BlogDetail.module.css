@@ -1,0 +1,71 @@
+/* client/src/BlogDetail.module.css */
+
+.container {
+    max-width: 800px; /* Constrain the width */
+    margin: 20px auto; /* Center horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imageContainer {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .keywords {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .keywords {
+      font-size: 0.9rem;
+    }
+  }
+  
